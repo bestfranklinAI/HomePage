@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+    <link rel="icon" href="assets/images/icon.png" type="image/webp">
+    <title>Franklin's Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Snowfall Background Animation -->
+    <!-- <section class="animated-background">
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section> -->
+    <!-- End of Snowfall Background Animation -->
+
+    <div class="min-h-full flex-h-center" id="background_div">
+        <input type="hidden" value="https://bio.link" id="app-url">
+        <input type="hidden" value="null" id="is-featured">
+        <canvas id="bg-canvas" class="background-overlay"></canvas>
+        </input>
+        </input>
+
+        <div class="mt-48 page-full-wrap relative ">
+            <input type="hidden" value="creator-page" id="page-type">
+            <img class="display-image m-auto" data-src="assets/images/logo.gif" src="assets/images/logo.gif"
+                alt="[Your photo alt]" />
+            <h1 class="page-title page-text-color page-text-font mt-16 text-center">Franklin's Home</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="page-title page-text-font mt-16 text-center">Personal</h2>
+                        <div class="mt-24">
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://portal.azure.com/#home">
+                                    <img class="link-each-image" data-src="assets/images/azure.png"
+                                        src="assets/images/azure.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">My VPN server</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://hkustconnect-my.sharepoint.com/">
+                                    <img class="link-each-image" data-src="assets/images/onedrive.png"
+                                        src="assets/images/onedrive.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">My OneDrive</span>
+                                </a>
+                            </div>
+
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.linkedin.com/in/franklin-cheung/">
+                                    <img class="link-each-image" data-src="assets/images/linkedin.png"
+                                        src="assets/images/linkedin.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">LinkedIn</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://github.com/">
+                                    <img class="link-each-image" data-src="assets/images/github.png"
+                                        src="assets/images/github.png" alt="GitHub @ [User]" />
+                                    <span class=" item-title text-center">GitHub</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://password-manager-mocha.vercel.app/">
+                                    <img class="link-each-image" data-src="assets/images/lock.png"
+                                        src="assets/images/lock.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">My Password Manager</span>
+                                </a>
+                            </div>
+
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://huggingface.co/spaces/deepseek-ai/DeepSeek-VL-7B">
+                                    <img class="link-each-image" data-src="assets/images/vision.png"
+                                        src="assets/images/vision.png" alt="Credly @ [User]" />
+                                    <span class=" item-title text-center">Vision Chatbot</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.perplexity.ai/">
+                                    <img class="link-each-image" data-src="assets/images/search.png"
+                                        src="assets/images/search.png" alt="HackerRank @ [User]" />
+                                    <span class=" item-title text-center">AI Search</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.phind.com/search?home=true">
+                                    <img class="link-each-image" data-src="assets/images/phind.png"
+                                        src="assets/images/phind.png" alt="HackerRank @ [User]" />
+                                    <span class=" item-title text-center">Programming Assistant</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://chat.deepseek.com/">
+                                    <img class="link-each-image" data-src="assets/images/chatbot.png"
+                                        src="assets/images/chatbot.png" alt="Replit @ [User]" />
+                                    <span class=" item-title text-center">General Chatbot</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://poe.com/">
+                                    <img class="link-each-image" data-src="assets/images/poe.png"
+                                        src="assets/images/poe.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">Poe</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.instagram.com/">
+                                    <img class="link-each-image" data-src="assets/images/instagram.png"
+                                        src="assets/images/instagram.png" alt="Instagram @ [User]" />
+                                    <span class=" item-title text-center">Instagram</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.coze.com/store/bot/7377050162981683208?panel=1">
+                                    <img class="link-each-image" data-src="assets/images/chatgpt4o.png"
+                                        src="assets/images/chatgpt4o.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">ChatGPT 4-o</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-6">
+                        <h2 class="page-title page-text-font mt-16 text-center">Work</h2>
+                        <div class="mt-24">
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://hkust.edu.hk/stu_intranet/">
+                                    <img class="link-each-image" data-src="assets/images/intranet.png"
+                                        src="assets/images/intranet.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">Student Intranet</span>
+                                </a>
+                            </div>
+
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://lbbooking.hkust.edu.hk/calendar/day.php?area=8&room=57">
+                                    <img class="link-each-image" data-src="assets/images/library.png"
+                                        src="assets/images/library.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">Library Room Booking</span>
+                                </a>
+                            </div>
+
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://course.cse.ust.hk/comp3111/">
+                                    <img class="link-each-image" data-src="assets/images/comp3111.png"
+                                        src="assets/images/comp3111.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">COMP 3111</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://course.cse.ust.hk/comp3711/">
+                                    <img class="link-each-image" data-src="assets/images/comp3711.png"
+                                        src="assets/images/comp3711.png" alt="LinkedIn @ [User]" />
+                                    <span class=" item-title text-center">COMP 3711</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://piazza.com/">
+                                    <img class="link-each-image" data-src="assets/images/piazza.png"
+                                        src="assets/images/piazza.png" alt="GitHub @ [User]" />
+                                    <span class=" item-title text-center">Piazza</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://career.hkust.edu.hk/web/job.php">
+                                    <img class="link-each-image" data-src="assets/images/jobboard.png"
+                                        src="assets/images/jobboard.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">Job Board</span>
+                                </a>
+                            </div>
+
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://leetcode.com/">
+                                    <img class="link-each-image" data-src="assets/images/leetcode.png"
+                                        src="assets/images/leetcode.png" alt="Credly @ [User]" />
+                                    <span class=" item-title text-center">LeetCode</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://ust.space/home">
+                                    <img class="link-each-image" data-src="assets/images/ustspace.png"
+                                        src="assets/images/ustspace.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">UST Space</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www-statista-com.lib.ezproxy.hkust.edu.hk/">
+                                    <img class="link-each-image" data-src="assets/images/statista.png"
+                                        src="assets/images/statista.png" alt="HackerRank @ [User]" />
+                                    <span class=" item-title text-center">Statista</span>
+                                </a>
+                            </div>
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://www.researchgate.net/">
+                                    <img class="link-each-image" data-src="assets/images/researchgate.png"
+                                        src="assets/images/researchgate.png" alt="Replit @ [User]" />
+                                    <span class=" item-title text-center">ResearchGate</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://my.pitchbook.com">
+                                    <img class="link-each-image" data-src="assets/images/pitchbook.png"
+                                        src="assets/images/pitchbook.png" alt="Facebook @ [User]" />
+                                    <span class=" item-title text-center">Pitchbook</span>
+                                </a>
+                            </div>
+
+                            <div class="page-item-wrap relative">
+                                <div class="page-item flex-both-center absolute"></div>
+                                <a  class="page-item-each py-10 flex-both-center"
+                                    href="https://app.socialcareer.org/organisation-member/HKUSTCON/hkust-connect">
+                                    <img class="link-each-image" data-src="assets/images/volunteer.png"
+                                        src="assets/images/volunteer.png" alt="Instagram @ [User]" />
+                                    <span class=" item-title text-center">Volunteer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--
+    A different snowfall -->
+<script src="assets/js/snowfall.js"></script>
+
+</html>
